@@ -1,19 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 :root {
-    --bg-color: #ffffff;
-    --text-color: #222222;
-    --header-bg: #f16529;
-    --header-border: #e44d26;
-    --footer-bg: #f16529;
-    --aside-bg: #f16529;
-    --link-color: #e44d26;
-    --link-hover: #ffffff;
-    --border-color: #cccccc;
-    --selection-bg: #b3d4fc;
-}
-
-body.dark {
     --bg-color: #121212;
     --text-color: #e0e0e0;
     --header-bg: #1a1a1a;
