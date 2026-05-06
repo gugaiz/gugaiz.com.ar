@@ -59,3 +59,30 @@ function initChart() {
 	// load new data every 15 seconds
 	setInterval('loadData()', 15000);
 }
+
+// Dark mode toggle
+(function() {
+	var toggle = document.getElementById('dark-mode-toggle');
+	var isDark = localStorage.getItem('darkMode') === 'true';
+
+	function applyDarkMode(dark) {
+		if (dark) {
+			document.body.classList.add('dark');
+			toggle.textContent = 'Light Mode';
+		} else {
+			document.body.classList.remove('dark');
+			toggle.textContent = 'Dark Mode';
+		}
+		localStorage.setItem('darkMode', dark);
+	}
+
+	if (toggle) {
+		toggle.addEventListener('click', function() {
+			isDark = !isDark;
+			applyDarkMode(isDark);
+		});
+
+		// Apply saved preference on page load
+		applyDarkMode(isDark);
+	}
+})();

@@ -1,18 +1,45 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --header-bg: #f16529;
+    --header-border: #e44d26;
+    --footer-bg: #f16529;
+    --aside-bg: #f16529;
+    --link-color: #e44d26;
+    --link-hover: #ffffff;
+    --border-color: #cccccc;
+    --selection-bg: #b3d4fc;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: #1a1a1a;
+    --header-border: #bb86fc;
+    --footer-bg: #1a1a1a;
+    --aside-bg: #1a1a1a;
+    --link-color: #bb86fc;
+    --link-hover: #ffffff;
+    --border-color: #333333;
+    --selection-bg: #bb86fc;
+}
+
 html {
-    color: #222;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     font-size: 1em;
     line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: var(--selection-bg);
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: var(--selection-bg);
     text-shadow: none;
 }
 
@@ -20,7 +47,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--border-color);
     margin: 1em 0;
     padding: 0;
 }
@@ -58,6 +85,8 @@ textarea {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .wrapper {
@@ -68,22 +97,22 @@ body {
 #gauge_div { width: 120px; margin: 0 auto; }
 
 /* ===================
-    ALL: Orange Theme
-   =================== */
+     ALL: Orange Theme
+    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid var(--header-border);
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid var(--header-border);
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: var(--header-bg);
 }
 
 .title {
