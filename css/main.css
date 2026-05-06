@@ -48,6 +48,10 @@ video {
     vertical-align: middle;
 }
 
+.dark iframe {
+  filter: invert(1) hue-rotate(180deg);
+}
+
 fieldset {
     border: 0;
     margin: 0;
